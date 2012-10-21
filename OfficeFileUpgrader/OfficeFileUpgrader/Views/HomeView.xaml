@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="OfficeFileUpgrader.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="356"
+             Width="436">
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"  />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition  />
+        </Grid.ColumnDefinitions>
+            <TextBlock Text="Target Directory:" HorizontalAlignment="Right" />
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="TargetDirectory"/>
+            <Button Grid.Column="1" Content=" ... "/>
+        </Grid>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Right">Mode:</TextBlock>
+        <StackPanel Grid.Column="1" Grid.Row="1"  >
+            <RadioButton Content="Test" />
+            <RadioButton Content="Duplicate" />
+            <RadioButton Content="Convert" />
+        </StackPanel>
+        <TextBlock Text="Recursve:" Grid.Row="2" HorizontalAlignment="Right" />
+        <CheckBox  Grid.Column="1" Grid.Row="2"  />
+        <TextBlock Text="Overwrite:" Grid.Row="3" HorizontalAlignment="Right" />
+        <CheckBox  Grid.Column="1" Grid.Row="3"  />
+        <TextBlock Text="Stop On Error:" Grid.Row="4" HorizontalAlignment="Right" />
+        <CheckBox  Grid.Column="1" Grid.Row="4"  />
+        <StackPanel Grid.Row="6" Orientation="Horizontal">
+            <Button>Run</Button>
+            <Button>Stop</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
