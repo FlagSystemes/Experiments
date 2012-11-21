@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Threading;
 using NServiceBus;
-using NServiceBus.Installation.Environments;
 using NUnit.Framework;
 
 [TestFixture]
@@ -18,7 +16,7 @@ public class BusTests
               .UnicastBus()
               .SendOnly();
 
-        bus.Send("MyEndPoint", new MyMessage(){Id = Guid.NewGuid()});
+        bus.Send("MyEndPoint", new MyMessage {Id = Guid.NewGuid()});
 
     }
 }
