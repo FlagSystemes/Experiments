@@ -17,7 +17,7 @@ public class AsyncTest
         var test2 = test + test;
     }
 
-    private async Task<string> getTestString()
+    async Task<string> getTestString()
     {
         return "test";
     }
