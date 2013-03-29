@@ -1,9 +1,9 @@
-﻿using System;
+﻿	using System;
 
-public static class ModuleInitializer
-{
-	public static void Initialize()
+	public static class ModuleInitializer
 	{
-		Environment.SetEnvironmentVariable("ModuleInitializer", "true");
+		public static void Initialize()
+		{
+			Environment.SetEnvironmentVariable("ModuleInitializer", "true");
+		}
 	}
-}
