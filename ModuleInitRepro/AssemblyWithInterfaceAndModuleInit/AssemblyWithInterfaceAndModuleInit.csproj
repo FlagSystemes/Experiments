@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModuleInitializer.cs" />
-    <Compile Include="MyBaseClass.cs" />
+    <Compile Include="MyInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />

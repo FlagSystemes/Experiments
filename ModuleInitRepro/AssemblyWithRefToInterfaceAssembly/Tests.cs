@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using AssemblyWithClassAndModuleInit;
 using NUnit.Framework;
 
 [TestFixture]
